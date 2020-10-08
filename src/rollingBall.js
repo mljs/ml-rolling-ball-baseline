@@ -1,3 +1,4 @@
+import isAnyArray from 'is-any-array';
 import max from 'ml-array-max';
 import min from 'ml-array-min';
 
@@ -26,6 +27,9 @@ import min from 'ml-array-min';
  * @param {Number} windowS: width of local window for smoothing
  */
 export function rollingBall(spectrum, windowM, windowS) {
+  if (!isAnyArray(spectrum)) {
+    throw new Error('Spectrum must be an array');
+  }
   const numberPoints = spectrum.length;
   const maxima = new Float64Array(numberPoints);
   const minima = new Float64Array(numberPoints);

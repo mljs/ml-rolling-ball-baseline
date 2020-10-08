@@ -50,6 +50,7 @@
     "rollup": "^2.29.0"
   },
   "dependencies": {
+    "is-any-array": "^0.1.0",
     "ml-array-max": "^1.2.0",
     "ml-array-min": "^1.2.0"
   }
