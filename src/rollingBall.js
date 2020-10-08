@@ -27,9 +27,9 @@ import min from 'ml-array-min';
  */
 export function rollingBall(spectrum, windowM, windowS) {
   const numberPoints = spectrum.length;
-  let maxima = new Float32Array(numberPoints);
-  let minima = new Float32Array(numberPoints);
-  let baseline = new Float32Array(numberPoints);
+  const maxima = new Float64Array(numberPoints);
+  const minima = new Float64Array(numberPoints);
+  const baseline = new Float64Array(numberPoints);
 
   /* Find the minima */
   let u1 = Math.ceil((windowM + 1) / 2);
