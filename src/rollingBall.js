@@ -23,17 +23,30 @@ import min from 'ml-array-min';
  *     https://cran.r-project.org/web/packages/baseline/index.html
  * @export
  * @param {Array} spectrum
- * @param {Number} windowM: width of local window for minimization/maximization
- * @param {Number} windowS: width of local window for smoothing
+ * @param {Number} [options.windowM]: width of local window for minimization/maximization, defaults to 4% of the spectrum length
+ * @param {Number} [options.windowS]: width of local window for smoothing, defaults to 8% of the specturm length
  */
-export function rollingBall(spectrum, windowM, windowS) {
+export function rollingBall(spectrum, options = {}) {
   if (!isAnyArray(spectrum)) {
     throw new Error('Spectrum must be an array');
   }
+
+  if (spectrum.length === 0) {
+    throw new TypeError('Spectrum must not be empty');
+  }
+
   const numberPoints = spectrum.length;
   const maxima = new Float64Array(numberPoints);
   const minima = new Float64Array(numberPoints);
   const baseline = new Float64Array(numberPoints);
+
+  // windowM 4 percent of spectrum length
+  // windowS 8 percent of spectrum length
+
+  const {
+    windowM = Math.round(numberPoints * 0.04),
+    windowS = Math.round(numberPoints * 0.04),
+  } = options;
 
   /* Find the minima */
   let u1 = Math.ceil((windowM + 1) / 2);
