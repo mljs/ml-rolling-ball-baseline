@@ -1,4 +1,4 @@
-# rollingBallBaseline
+# ml-rolling-ball-baseline
 
 [![NPM version][npm-image]][npm-url]
 [![build status][ci-image]][ci-url]
@@ -14,12 +14,12 @@ Applied Spectroscopy, 64, 1007-1016.](https://cran.r-project.org/web/packages/ba
 
 ## Installation
 
-`$ npm i ml-rollingBallBaseline`
+`$ npm i ml-rolling-ball-baseline`
 
 ## Usage
 
 ```js
-import { rollingBall } from 'ml-rollingBallBaseline';
+import { rollingBall } from 'ml-rolling-ball-baseline';
 
 // you need to provide and array with the data and
 // two numbers indicating the "size" of the balls,
@@ -27,15 +27,15 @@ import { rollingBall } from 'ml-rollingBallBaseline';
 const baseline = rollingBall(spectrum, 200, 400);
 ```
 
-## [API Documentation](https://mljs.github.io/rollingBallBaseline/)
+## [API Documentation](https://mljs.github.io/ml-rolling-ball-baseline/)
 
 ## License
 
 [MIT](./LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/ml-rollingBallBaseline.svg
-[npm-url]: https://www.npmjs.com/package/ml-rollingBallBaseline
-[ci-image]: https://github.com/mljs/rollingBallBaseline/workflows/Node.js%20CI/badge.svg?branch=master
-[ci-url]: https://github.com/mljs/rollingBallBaseline/actions?query=workflow%3A%22Node.js+CI%22
-[download-image]: https://img.shields.io/npm/dm/ml-rollingBallBaseline.svg
-[download-url]: https://www.npmjs.com/package/ml-rollingBallBaseline
+[npm-image]: https://img.shields.io/npm/v/ml-rolling-ball-baseline.svg
+[npm-url]: https://www.npmjs.com/package/ml-rolling-ball-baseline
+[ci-image]: https://github.com/mljs/ml-rolling-ball-baseline/workflows/Node.js%20CI/badge.svg?branch=master
+[ci-url]: https://github.com/mljs/ml-rolling-ball-baseline/actions?query=workflow%3A%22Node.js+CI%22
+[download-image]: https://img.shields.io/npm/dm/ml-rolling-ball-baseline.svg
+[download-url]: https://www.npmjs.com/package/ml-rolling-ball-baseline

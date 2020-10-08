@@ -1,5 +1,5 @@
 {
-  "name": "ml-rollingBallBaseline",
+  "name": "ml-rolling-ball-baseline",
   "version": "0.0.0",
   "description": "Rolling ball baseline correction",
   "main": "lib/index.js",
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mljs/rollingBallBaseline.git"
+    "url": "git+https://github.com/mljs/ml-rolling-ball-baseline.git"
   },
   "keywords": [],
   "author": "Kevin M. Jablonka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mljs/rollingBallBaseline/issues"
+    "url": "https://github.com/mljs/ml-rolling-ball-baseline/issues"
   },
-  "homepage": "https://github.com/mljs/rollingBallBaseline#readme",
+  "homepage": "https://github.com/mljs/ml-rolling-ball-baseline#readme",
   "jest": {
     "testEnvironment": "node"
   },
