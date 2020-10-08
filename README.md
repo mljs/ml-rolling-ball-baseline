@@ -21,6 +21,9 @@ Applied Spectroscopy, 64, 1007-1016.](https://cran.r-project.org/web/packages/ba
 ```js
 import { rollingBall } from 'ml-rolling-ball-baseline';
 
+// spectrum is an array
+const spectrum=[1, 2, 1, ...];
+
 // you need to provide and array with the data and
 // two numbers indicating the "size" of the balls,
 // i.e., the maximization/minimization and the smoothing window.
