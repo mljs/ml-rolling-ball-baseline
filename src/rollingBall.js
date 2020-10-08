@@ -23,7 +23,7 @@ import min from 'ml-array-min';
  * @export
  * @param {Array} spectrum
  * @param {Number} windowM: width of local window for minimization/maximization
- * @param {Number} windowS:width of local window for smoothing
+ * @param {Number} windowS: width of local window for smoothing
  */
 export function rollingBall(spectrum, windowM, windowS) {
   const numberPoints = spectrum.length;

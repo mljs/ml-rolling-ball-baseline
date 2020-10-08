@@ -13,10 +13,12 @@ Rolling ball baseline correction.
 ## Usage
 
 ```js
-import library from 'ml-rollingBallBaseline';
+import { rollingBall } from 'ml-rollingBallBaseline';
 
-const result = library(args);
-// result is ...
+// you need to provide and array with the data and
+// two numbers indicating the "size" of the balls,
+// i.e., the maximization/minimization and the smoothing window.
+const baseline = rollingBall(spectrum, 200, 400);
 ```
 
 ## [API Documentation](https://mljs.github.io/rollingBallBaseline/)
