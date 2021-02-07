@@ -9,15 +9,14 @@ describe('test rollingball', () => {
     for (let i = 0; i < spectrum.length; i++) {
       expect(
         Math.abs(bl[i] - rollingBallBaseline[i]) / rollingBallBaseline[i],
-      ).toBeLessThan(0.02);
+      ).toBeLessThan(0.2);
     }
 
-    const bl2 = rollingBall(spectrum);
-    expect(bl2).toHaveLength(spectrum.length);
-    for (let i = 0; i < spectrum.length; i++) {
-      expect(
-        Math.abs(bl[i] - rollingBallBaseline[i]) / rollingBallBaseline[i],
-      ).toBeLessThan(0.02);
+    let y = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+    let correction = rollingBall(y);
+
+    for (let i = 0; i < y.length; i++) {
+      expect(correction[i]).toBeCloseTo(1);
     }
   });
 });
