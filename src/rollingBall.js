@@ -1,7 +1,7 @@
 import isAnyArray from 'is-any-array';
 import max from 'ml-array-max';
-import min from 'ml-array-min';
 import mean from 'ml-array-mean';
+import min from 'ml-array-min';
 
 /**
  * Rolling ball baseline correction algorithm.
@@ -23,6 +23,7 @@ import mean from 'ml-array-mean';
  *     https://cran.r-project.org/web/packages/baseline/index.html
  * @export
  * @param {Array} spectrum
+ * @param {Object} [options={}]
  * @param {Number} [options.windowM] - width of local window for minimization/maximization, defaults to 4% of the spectrum length
  * @param {Number} [options.windowS] - width of local window for smoothing, defaults to 8% of the specturm length
  */
