@@ -11,9 +11,6 @@ import min from 'ml-array-min';
  * The baseline is the trace one gets by rolling a ball below a spectrum. Algorithm has three steps:
  * Finding the minima in each window, find maxima among minima and then smooth over them by averaging.
  *
- * Algorithm described in (1), but in the implementation here the window width does not change.
- * Following the implementation of the R baseline package (2)
- *
  * Reference:
  * (1) Kneen, M. A.; Annegarn, H. J.
  *     Algorithm for Fitting XRF, SEM and PIXE X-Ray Spectra Backgrounds.

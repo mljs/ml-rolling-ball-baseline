@@ -4,7 +4,7 @@
 [![build status][ci-image]][ci-url]
 [![npm download][download-image]][download-url]
 
-Rolling ball baseline correction. The algorithm was initially described in [[1]](#ref1). The implementation follows the R implementation [[2]](#ref2) and the unit test compares against this implementation.
+Rolling ball baseline correction. The algorithm was initially described in [[1]](#ref1). ƒ
 
 <a name="ref1"></a> 1. [Kneen, M. A.; Annegarn, H. J. Algorithm for Fitting XRF, SEM and PIXE X-Ray Spectra Backgrounds. Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms 1996, 109–110, 209–213.](<https://doi.org/10.1016/0168-583X(95)00908-6>)
 
