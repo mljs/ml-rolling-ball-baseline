@@ -43,7 +43,7 @@ export function rollingBall(spectrum, options = {}) {
   // windowS 8 percent of spectrum length
   const {
     windowM = Math.round(numberPoints * 0.04),
-    windowS = Math.round(numberPoints * 0.04),
+    windowS = Math.round(numberPoints * 0.08),
   } = options;
 
   // fi(1) in original paper
